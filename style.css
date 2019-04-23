@@ -26,19 +26,6 @@ h1
     margin-bottom: 0;
 }
 
-/*...shadow end of parts...*/
-.degrade
-{
-    margin-left: auto;
-    margin-right: auto;
-    background-image:linear-gradient(white 60%, rgb(234, 229, 229) 100%);
-    border-radius: 3px;
-    box-shadow: 0px 1px rgb(234, 235, 237);
-    margin-top: 20px;
-    height: 20px;
-    width: 95%;
-}
-
 /*...Déco services et protfolio...*/
 .deco
 {
@@ -127,7 +114,7 @@ header nav a:hover
 .child
 {
     position: relative;
-    height: 550px;
+    height: 250px;
     background-image: url('images/slider/bg1.jpg');
     background-color: rgba(36, 37, 39, 0.8);
     background-repeat: no-repeat;
@@ -139,46 +126,46 @@ header nav a:hover
 
 .semi_circle_left
 {
-    width: 30px;
-    height: 70px;
+    width: 22px;
+    height: 52px;
     background-color: rgba(34, 31, 31, 0.3);
     border-top-right-radius: 100% 50%;
     border-bottom-right-radius: 100% 50%;
     position: absolute;
-    top: 255px;
+    top: 80px;
     cursor: pointer;
 }
 
 .semi_circle_right
 {
-    width: 30px;
-    height: 70px;
+    width: 22px;
+    height: 52px;
     background-color: rgba(34, 31, 31, 0.3);
     border-top-left-radius: 100% 50%;
     border-bottom-left-radius: 100% 50%;
     position: absolute;
     right: 0;
-    top: 255px;
+    top: 80px;
     cursor: pointer;
 }
 
 .fa-angle-left
 {
     color: white;
-    font-size: 35px;
+    font-size: 22px;
     position: absolute;
-    left: 2px;
-    top: 272px;
+    left: 1px;
+    top: 95px;
     cursor: pointer;
 }
 
 .fa-angle-right
 {
     color: white;
-    font-size: 35px;
+    font-size: 22px;
     position: absolute;
-    right: 2px;
-    top: 272px;
+    right: 1px;
+    top: 95px;
     cursor: pointer;
 }
 
@@ -193,6 +180,7 @@ header nav a:hover
 {
     color: white;
     text-transform: uppercase;
+    font-size: 20px;
 }
 
 .webagency_blue
@@ -203,6 +191,7 @@ header nav a:hover
 .text_accueil
 {
     color: white;
+    font-size: 12px;
 }
 
 .more_infos
@@ -210,11 +199,11 @@ header nav a:hover
     background-color: rgb(92, 173, 211);
     border: none;
     border-radius: 3px;
-    padding: 10px 6px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 300;
     color: whitesmoke;
-    box-shadow:
-    0px 2px 2px 0px rgba(0, 0, 0, 0.5),
-    0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0px 2px 2px 0px rgb(52, 158, 194);
     cursor: pointer;
 }
 
@@ -236,13 +225,6 @@ header nav a:hover
 }
 
 .services-text 
-{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.services-elts 
 {
     width: 90%;
     margin-left: auto;
@@ -322,7 +304,10 @@ header nav a:hover
 
 .galery_button ul
 {
-    background-color: rgb(189, 185, 185);
+    width: 95%;
+    background-color: rgb(228, 227, 227);
+    font-weight: 100;
+    font-size: 19px;
     list-style: none;
     margin-left: auto;
     margin-right: auto;
@@ -377,11 +362,7 @@ header nav a:hover
 .arrow
 {
     position: absolute;
-    left: 50%;
     bottom: -10px;
-    transform: translateX(-50%);
-    width: 0; 
-    height: 0; 
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid rgb(41, 117, 153);
@@ -410,12 +391,11 @@ header nav a:hover
 
 .picture_animation:hover > .deco_img_portfolio
 {
-	display: block;
 	opacity: 1;
 	bottom: 4px;
 }
 
-.picture_animation .deco_img_portfolio
+.deco_img_portfolio
 {
 	width: 100%;
 	height: 35%;
@@ -423,10 +403,10 @@ header nav a:hover
 	position: absolute;
 	bottom: -129px;
 	opacity: 0;
-    -webkit-transition: .4s ease;
-    -moz-transition: .4s ease;
-    -o-transition: .4s ease;
-    transition: .4s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
 }
 
 .eye_circles
@@ -454,7 +434,7 @@ header nav a:hover
 .deco_img_portfolio p
 {
   color: white;
-  margin-left: 30px;
+  margin-left: 5px;
 }
 
 .deco_img_portfolio span
@@ -512,13 +492,13 @@ input:focus, textarea:focus
 {
     background-color: rgb(92, 173, 211);
     color: whitesmoke;
-    box-shadow:
-    0px 2px 2px 0px rgba(0, 0, 0, 0.5),
-    0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+    box-shadow: 0px 3px 2px 0px rgb(44, 127, 155);
     cursor: pointer;
+    border: none;
 }
 
-/*--Media queries-----------------------------------------------*/
+/*--Media queries-----------------------------------------------
+----------------------------------------------------------------*/
 
 @media screen and (min-width: 768px) {
     /*---Header---*/
@@ -561,9 +541,60 @@ input:focus, textarea:focus
         margin-top: 90px;
     }
 
+    .child
+    {
+        height: 550px;
+    }
+
+    .semi_circle_left
+    {
+        width: 30px;
+        height: 70px;
+        top: 255px;
+    }
+
+    .semi_circle_right
+    {
+        width: 30px;
+        height: 70px;
+        top: 255px;
+    }
+
+    .fa-angle-left
+    {
+        font-size: 35px;
+        left: 2px;
+        top: 272px;
+    }
+
+    .fa-angle-right
+    {
+        font-size: 35px;
+        right: 2px;
+        top: 272px;
+    }
+
+    .text_button h1
+    {
+        font-size: 30px;
+    }
+
+    .text_accueil
+    {
+        color: white;
+        font-size: 15px;
+    }
+
     .text_accueil br
     {
         display: none;
+    }
+
+    .more_infos
+    {
+        border-radius: 3px;
+        padding: 10px 15px;
+        font-size: 20px;
     }
     /*---Services---*/
     .relative_icons 
@@ -598,10 +629,15 @@ input:focus, textarea:focus
     /*---Portfolio---*/
     .galery_button 
     {
-        width: 50%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 20px;
+    }
+
+    .galery_button
+    {
+        width: 80%;
     }
 
     .picture_animation 
@@ -671,6 +707,11 @@ input:focus, textarea:focus
     {
         margin-right: 130px;
     }
+    /*---Accueil---*/
+    .text_button h1
+    {
+        font-size: 33px;
+    }
     /*---Portfolio---*/
     #portfolio 
     {
@@ -680,7 +721,7 @@ input:focus, textarea:focus
 
     .galery_button
     {
-        width: 40%;
+        width: 45%;
     }
 
     .picture_animation 
@@ -688,6 +729,10 @@ input:focus, textarea:focus
         width: 20%;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .picture_animation p
+    {
+        font-size: 14px;
     }
     /*---Contact---*/
     .contact_infos 
