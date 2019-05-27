@@ -606,6 +606,7 @@ input:focus, textarea:focus
     .services_part 
     {
         width: 60%;
+        text-align: left;
     }
 
     .service 
