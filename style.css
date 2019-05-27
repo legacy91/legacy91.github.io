@@ -617,11 +617,6 @@ input:focus, textarea:focus
         margin-right: 15px;
     }
 
-    .service-content 
-    {
-        text-align: justify;
-    }
-
     .service-content h2 
     {
         margin-bottom: 0;
